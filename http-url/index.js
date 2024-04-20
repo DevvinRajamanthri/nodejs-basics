@@ -9,9 +9,9 @@ http.createServer(function (req, res) {
     res.end(txt);
   }
   if(req.url == "/about"){
-    txt = "this is changing the page depending on what the url is"
+    txt = "changing the page depending on what the url is"
     res.end(txt);
   }
   
-  res.end(txt);
+
 }).listen(8080);
