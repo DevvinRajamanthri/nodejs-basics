@@ -1,14 +1,8 @@
-const express = require("express");
-const app = express();
-const port = 3000;
-
-app.get("/", function (req, res) {
-  res.send("Hello World!");
+let express = require("express");
+let app = express();
+let port = 3000;
+let fs = require("fs");
+app.get("/", function(req, res){
+  res.send("hello");
 });
-app.get("/about", function (req, res) {
-  res.send("This is the about page")
-});
-
-app.listen(port, function () {
-  console.log(`Example app listening on port ${port}!`);
-});
+app.listen(8080);
